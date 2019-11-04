@@ -1,0 +1,6 @@
+*.swp
+**/*.swp
+build
+build/**
+release
+release/**

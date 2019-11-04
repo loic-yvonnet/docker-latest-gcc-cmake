@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch C++ Docker Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/bin/hello_world",
+            "args": [],
+            "targetArchitecture": "x64",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "preLaunchTask": "start-gdbserver",
+            "miDebuggerServerAddress": "localhost:2000",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "sourceFileMap": {
+                "/home/develop/dev": "${workspaceRoot}"
+            }
+        }
+    ]
+}

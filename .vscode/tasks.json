@@ -1,0 +1,75 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "start develop env",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/start_container.sh",
+            "problemMatcher": [],
+	    "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "stop develop env",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/stop_container.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "cmake generate",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/gen_cmake.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "compile",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "${workspaceFolder}/tools/shells/compile.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]            
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/clean.sh",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "make package",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/make_package.sh"
+        },
+        {
+            "label": "start-gdbserver",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/start_gdbserver.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "build develop image",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/build_docker_image.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "run app",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/run.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "stop app",
+            "type": "shell",
+            "command": "${workspaceFolder}/tools/shells/kill.sh",
+            "problemMatcher": []
+        }
+    ]
+}
