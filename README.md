@@ -55,7 +55,7 @@ In other words:
 * **run.sh**: Runs the application. It should display "Hello, World" if everything worked out.
 * **stop_container.sh**: Stops the Docker container.
 
-Please note that it was successfully tested on Ubuntu 18.08 on November, 2019.
+Please note that it was successfully tested on Ubuntu 18.04 on November, 2019.
 
 ## Debugging from the command line
 
