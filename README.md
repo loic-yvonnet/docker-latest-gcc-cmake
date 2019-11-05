@@ -90,8 +90,8 @@ Making it simple to debug from Visual Studio Code is the whole point of this rep
 
 Just fork this repository and then replace the container name and the application name by your own:
 ```shell
-find . -type f | xargs grep loic.yvo/ubuntu/gcc | cut -d: -f1 | sort | uniq | sed -i s@loic.yvo/ubuntu/gcc@your_containe_name_here@g
-find . -type f | xargs grep hello_world | cut -d: -f1 | sort | uniq | sed -i s/hello_world/your_app_name_here/g
+find . -type f | xargs grep loic.yvo/ubuntu/gcc | cut -d: -f1 | sort | uniq | xargs sed -i s@loic.yvo/ubuntu/gcc@your_containe_name_here@g
+find . -type f | xargs grep hello_world | cut -d: -f1 | sort | uniq | xargs sed -i s/hello_world/your_app_name_here/g
 ```
 
 Then, you can add files to the `src` folder, and edit the `CMakeFiles.txt`.
